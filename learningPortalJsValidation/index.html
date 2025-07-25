@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <img src="./assets/syncfusionLogo.webp" alt="" class="icon">
+        <h3 class="portal-name">Library Portal</h3>
+        <h3 class="books-header">
+            Books
+        </h3>
+
+    </div>
+    <div class="form-wrapper">
+        <h1 class="form-head" id="book-header-messagers">Add New Book</h1>
+        <form action="#" class="myForm" id="myForm">
+            <div class="element-wrapper">
+                <label for="category" class="element-name">Category</label>
+                <div class="error-validator" id="category-wrapper">
+                    <select name="category" id="category" class="category">
+                        <option value="IT" id="it" selected>IT</option>
+                        <option value="CSE" id="it" >CSE</option>
+                        <option value="ECE" id="it" >ECE</option>
+                        <option value="EEE" id="it" >EEE</option>
+                    </select>
+                    <p class="error-message" id="errorMessage"></p>
+                    
+                </div>
+                <h1 class="message" id="catetory-messagers"></h1>
+            
+
+            </div>
+            <div class="element-wrapper">
+                
+                <label for="book" class="element-name">Book</label>
+                <div class="error-validator" id="book-wrapper">
+                    <input type="text" name="book" id="book">
+                    <p class="error-message" id="errorMessage"></p>
+                </div>
+                <h1 class="message" id="book-messagers"></h1>
+
+               
+            </div>
+            <div class="element-wrapper">
+                <label for="author-email" class="element-name">Author Email</label>
+                <div class="error-validator">
+                    <input type="author-email" name="authorEmail" id="author-email">
+                    <p class="error-message" id="errorMessage"></p>
+                </div>
+                <h1 class="message" id="email-messagers"></h1>
+
+            </div>
+            <div class="element-wrapper">
+                <label for="author-name" class="element-name">Author Name</label>
+                <div class="error-validator">
+                    <input type="text" name="authorName" id="author-name">
+                    <p class="error-message" id="errorMessage"></p>
+                </div>
+                <h1 class="message" id="name-messagers"></h1>
+
+            </div>
+            <div class="element-wrapper">
+                <label for="published" class="element-name">Published</label>
+                <div class="error-validator" id="published-wrapper">
+                    <input type="text" name="published" id="published">
+                    <p class="error-message" id="errorMessage"></p>
+                </div>
+                <h1 class="message" id="published-messagers"></h1>
+               
+            </div>
+            <div class="element-wrapper">
+                <label for="price" class="element-name">Price</label>
+                <div class="error-validator" id="price-wrapper">
+                    <input type="text" name="price" id="price">
+                    <p class="error-message" id="errorMessage"></p>
+                </div>
+                <h1 class="message" id="price-messagers"></h1>
+    
+            </div>
+            <button type="submit">
+                Save
+            </button>
+            <button type="reset">
+                Cancel
+            </button >
+            <button onclick="showDetails()">
+                Show
+            </button>
+        </form>
+
+    </div>
+    <div class="footer">
+        <h1>Copyright @2019 - persent Syncfusion </h1>
+    </div>
+</body>
+
+</html>

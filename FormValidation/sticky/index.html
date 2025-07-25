@@ -1,0 +1,513 @@
+<style>
+	body{
+		font-family:Inter!important;
+	}
+	h1, h2, h3, h4, h5, h6 {
+    margin-top: 0rem !important;
+}
+/* Banner section */
+	.creditcard p
+	{
+		font-size: 14px!important;
+    font-weight: 400!important;
+    line-height: 19px!important;
+	}
+	.oneword {
+    white-space: nowrap;
+}
+/* 	.document-banner-section {
+    padding-top: 184px !important;
+} */
+	.bs-global-inperson-signing-software-header {
+    color: #6938EF;
+}
+.trial-btn .elementor-button-icon
+	{
+		display: flex;
+		align-items: center;
+	}
+	.trial-btn a:hover svg
+	{
+		transform: rotate(-45deg) !important;
+	}
+	.trial-btn a
+	{
+		border: 2px solid;
+		border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+		box-shadow: 
+        0px 1px 2px 0px rgba(10, 13, 18, 0.05),
+        0px -2px 0px 0px rgba(10, 13, 18, 0.05) inset,
+        0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset;
+
+	}
+	.trial-btn svg
+	{
+		width: 20px;
+		height: 20px;
+	}
+#footer-counter-section, #footer-testimonials-section
+	{
+		display: none;
+	}
+	
+	.rightsidecontent .elementor-image-box-title
+	{
+		width:360px!important;
+	}
+
+	
+/* 	Banner GIF image styles */
+.right-section-animated-image {
+    display: block;
+}
+	
+	/* Active styles for the container */
+	.container {
+		display: flex;
+		width: 100%;
+		gap: 40px
+	}
+	/* Start Simple E-Signature Process section */
+	.toggle-list img {
+		display: none;
+	}
+	.toggle-list img.active {
+		display: block;
+	}
+	.arrow-container img {
+		max-width: none !important;
+		display: block !important;
+	}
+	.image-container {
+		flex: 1;
+		position: relative;
+		margin-bottom: 10px;
+	}
+	.image-container img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100% !important;
+/* 	
+		object-fit: unset; */
+		opacity: 0;
+		transition: opacity 0.5s ease;
+	    border-radius: 1px 32px 32px 32px;
+	}
+	.image-container img.active {
+		opacity: 1;
+	}
+	/* Right side toggle list container */
+	.toggle-list {
+		flex: 1;
+	}
+	.toggle-item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 16px;
+		cursor: pointer;
+		padding: 20px 24px;
+		border-color: #D0D5DD !important;
+		border: 1px solid #D0D5DD;
+		border-radius: 32px 1px 32px 32px !important;
+		color: #252525;
+		transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+	}
+	.toggle-item.active {
+		border: none;
+	}
+	.toggle-number {
+		color: #A4A7AE; /* Inactive color */
+		margin-right: 24px; /* Spacing between number and text */
+		flex-shrink: 0; /* Prevent the number from shrinking */
+		font-family: Inter;
+		font-size: 48px;
+		font-weight: 500;
+		line-height: 60px;
+		letter-spacing: -0.02em;
+		text-align: left;
+	}
+
+	.toggle-item.active .toggle-number {
+		color: #5925DC; 
+		font-family: Inter;
+		font-weight: 700;
+		text-align: left;
+		align-items: center;
+		display: flex;
+		position: relative;
+	}
+	.toggle-content-container {
+		display: flex;
+		flex-direction: column; /* Stack heading and paragraph vertically */
+		flex: 1; /* Take remaining space */
+	}
+	.toggle-item h3 {
+		margin: 0;
+		color: #252B37; /* Inactive color */
+		font-family: Inter;
+		font-size: 20px !important;
+		font-weight: 600;
+		line-height: 30px !important;
+		text-align: left;
+		align-items: center;
+	}
+	.toggle-item.active h3 {
+		color: #5925DC; /* Active color for the heading */
+		padding-bottom: 8px;
+		font-size: 20px;
+    line-height: 30px;
+	}
+	.toggle-content {
+		color:#283A5E;
+		max-height: 0;
+		font-family: Inter;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22px;
+		letter-spacing: -0.01em;
+		text-align: left;
+		overflow: hidden;
+		opacity: 0;
+		transition: max-height 0.3s ease, opacity 0.3s ease;
+	}
+	.toggle-item.active .toggle-content {
+		max-height: fit-content; /* Adjust based on content */
+		opacity: 1;
+	}
+	.arrow{
+		padding-left: 12px;
+	}	
+	
+	.tabsection
+	{
+		display: contents;
+	}
+
+@media (min-width:1700px){
+    .right-section-animated-image {
+        min-width: 1140px !important; 
+        min-height: 640px !important; 
+    }
+}
+@media screen and (max-width: 1024px) and (min-width:768px) {
+   
+    #where-to-use-boldsign .elementor-widget-wrap.elementor-element-populated {
+        justify-content: space-between
+    }
+	
+		.rightsidecontent .elementor-image-box-title
+		{
+			width:321px!important;
+		}
+	
+	 .right-section-animated-image {
+        width: 966px !important; 
+    }
+	}
+	
+					@media (max-width: 1024px) {
+		 .toggle-content {
+    font-size: 14px;
+    line-height: 20px;
+		}
+	    .toggle-number {
+        font-size: 30px;
+        line-height: 38px;
+    }
+     .toggle-item {
+    margin-bottom: 16px;
+    padding: 19px 16px;
+	}
+	
+	@media(max-width: 768px) {
+		.rightsideContents .elementor-image-box-wrapper
+		{
+			display: flex;
+			gap: 20px;
+		}
+		.right-section-animated-image {
+        width: 721px !important; 
+    }
+		
+		.rightsidecontent .elementor-image-box-title
+		{
+			width:100%!important;
+		}
+/* toogle section code */
+		.toggle-item h3 {
+    font-size: 16px;
+    line-height:24px;
+	}
+			.toggle-item.active h3 {
+    font-size: 20px;
+    line-height: 28px;
+}
+		  .toggle-number {
+        font-size: 24px;
+        line-height: 32px;
+    }
+			.toggle-list img  {
+    border-radius: 20px;
+	}
+			.arrow-container img{
+				  border-radius: 0;
+			}
+	.toggle-item {
+	    border-radius: 1px 20px 20px 20px !important;
+	}
+						}
+</style>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		// eSignature Process script
+		const toggleItems = document.querySelectorAll('.toggle-item');
+		const images = document.querySelectorAll('.image-container img');
+		const tabs = document.querySelectorAll(".toggle-item.tab");
+		let currentIndex = 0;
+		let autoSwitch;
+		// Define the arrow images
+		const activeArrow = 'https://storage.googleapis.com/staging-website-static-boldsign/2024/10/3162a359-icon-1.svg';   // Arrow for the active tab
+		const inactiveArrow = 'https://storage.googleapis.com/staging-website-static-boldsign/2024/10/d2b4d73f-icon.svg'; // Arrow for the inactive tab
+
+		function setActiveItem(index) {
+			toggleItems.forEach((item, i) => {
+				if (item != null)
+				{
+					item.classList.toggle('active', i === index);
+				}
+
+				if (images[i] != null)
+				{
+					images[i].classList.toggle('active', i === index);
+					if (i == index)
+					{
+						images[i].style.zIndex = '10';
+					}
+					else
+					{
+						images[i].style.zIndex = '0';
+					}
+				}
+
+				// Change the arrow image based on active/inactive
+				const arrowImg = item.querySelector('.arrow');
+				arrowImg.src = i === index ? activeArrow : inactiveArrow; 
+			});
+			currentIndex = index;
+		}
+
+		function handleClick(e) {
+			e.preventDefault(); // Prevent default anchor click behavior
+			const index = Number(e.currentTarget.getAttribute('data-index'));
+			setActiveItem(index);
+			//         resetAutoSwitch();
+		}
+
+		toggleItems.forEach((item) => {
+			item.addEventListener('click', handleClick);
+		});
+		
+				
+		// Function to start auto-switching tabs
+    function startAutoSwitch() {
+        clearInterval(autoSwitch); // Clear existing interval
+        autoSwitch = setInterval(() => {
+            currentIndex++;
+            if (currentIndex >= toggleItems.length/2) {
+                currentIndex = 0; // Reset to the first item
+							resetAutoSwitch(); // Stop existing interval
+            }
+            setActiveItem(currentIndex);
+					updateActiveTab(currentIndex);
+        }, 6000); // Adjust the interval time in milliseconds (e.g., 3000ms = 3 seconds)
+    }
+
+    // Function to reset auto-switching
+    function resetAutoSwitch() {
+        clearInterval(autoSwitch); // Stop existing interval
+        startAutoSwitch(); // Restart auto-switching
+    }
+
+
+
+		// Initialize the first active item
+		setActiveItem(currentIndex); // Ensure the correct arrow is displayed on page load
+		 // Start auto-switching when the page loads
+    startAutoSwitch();
+		const toggleClass = (elements, className, action = 'toggle') => {
+			elements.forEach(element => {
+				const classList = element.classList;
+				const classes = className.split(' ');
+				if (action === 'add') {
+					classes.forEach(cls => classList.add(cls));
+				} else if (action === 'remove') {
+					classes.forEach(cls => classList.remove(cls));
+				} else {
+					classes.forEach(cls => classList.toggle(cls));
+				}
+			});
+		};
+
+		window.showTab = function(tabId, contentId) {
+			const sectionNumber = tabId.slice(-1);
+			const contents = document.querySelectorAll('.contentsec' + sectionNumber);
+			const tabs = document.querySelectorAll('.tabsec' + sectionNumber);
+
+			toggleClass(contents, 'active', 'remove');
+			document.getElementById(contentId).classList.add('active');
+			toggleClass(tabs, 'active midTabs', 'remove');
+			var mytabId = document.getElementById(tabId);
+			if (mytabId != null)
+			{
+				mytabId.classList.add('active', 'midTabs');
+			}
+		};
+
+		document.querySelectorAll('.tab').forEach(tab => {
+			tab.addEventListener('click', function() {
+				const currentSection = this.id.slice(-1);
+				toggleClass(document.querySelectorAll('.tabsec' + currentSection), 'active midTabs', 'remove');
+				toggleClass(document.querySelectorAll('.contentsec' + currentSection), 'active', 'remove');
+				this.classList.add('active', 'midTabs');
+				var mycurrentSection = document.getElementById('content' + currentSection);
+				if (mycurrentSection != null)
+				{
+					mycurrentSection.classList.add('active');
+				}
+			});
+		});
+		
+		// Function to check and toggle 'activeTab' class
+		function toggleTabActiveClass() {
+			jQuery('.elementor-accordion .elementor-accordion-item').each(function() {
+				if (jQuery(this).find('.elementor-tab-title').hasClass('elementor-active')) {
+					jQuery(this).addClass('activeTab');
+				} else {
+					jQuery(this).removeClass('activeTab');
+				}
+			});
+		}
+		// Check on click
+		jQuery('.elementor-accordion .elementor-accordion-item').on('click', function() {
+			toggleTabActiveClass();
+		});
+
+		const tabsMobi = document.querySelectorAll(".toggle-item.tabMobi");
+		const imagesMobi = [
+			document.getElementById("imgMobile1"),
+			document.getElementById("imgMobile2"),
+			document.getElementById("imgMobile3"),
+			document.getElementById("imgMobile4"),
+      document.getElementById("imgMobile5"),
+		];
+		const arrowImages = [
+			document.getElementById("arrowImageMobi1"),
+			document.getElementById("arrowImageMobi2"),
+			document.getElementById("arrowImageMobi3"),
+			document.getElementById("arrowImageMobi4"),
+      document.getElementById("arrowImageMobi5"),
+		];
+
+		// Function to update the active tab and show (Simple E-Signature Process)
+		function updateActiveTab(activeIndex) {
+			tabsMobi.forEach((tab, index) => {
+				const image = imagesMobi[index];
+				const arrow = arrowImages[index];
+
+				if (index === activeIndex) {
+					tab.classList.add("active");
+					image.classList.add("active");
+					arrow.src = activeArrow; // Set the active arrow
+				} else {
+					tab.classList.remove("active");
+					image.classList.remove("active");
+					arrow.src = inactiveArrow; // Set the inactive arrow
+				}
+			});
+		}
+
+		// Add click event listeners to tabs
+		tabsMobi.forEach((tab, index) => {
+			tab.addEventListener("click", () => {
+				updateActiveTab(index);
+			});
+		});
+
+		// Set the default active tab
+		updateActiveTab(0);
+
+		document.querySelectorAll('.toggle-content a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.stopPropagation(); // Prevent parent click handlers
+    });
+	});
+		
+// 		FAQ script
+
+		// Mouseover and mouseout for FAQ items
+		var divsFAQ = document.getElementsByClassName('elementor-accordion-item');
+		for (var j = 0; j < divsFAQ.length; j++) {
+			divsFAQ[j].addEventListener('mouseover', function () {
+				var anchors = this.getElementsByClassName('elementor-accordion-title');
+				for (var i = 0; i < anchors.length; i++) {
+					anchors[i].classList.add('colortextFAQ');
+				}
+			}); 
+			divsFAQ[j].addEventListener('mouseout', function () {
+				var anchors = this.getElementsByClassName('elementor-accordion-title');
+				for (var i = 0; i < anchors.length; i++) {
+					anchors[i].classList.remove('colortextFAQ');
+				}
+			});
+		}
+
+		// Add 'activeFAQ' class after delay
+		setTimeout(function () {
+			var firstItem = document.querySelector('#esignatureFAQ .elementor-accordion .elementor-accordion-item');
+			if (firstItem) {
+				firstItem.classList.add('activeFAQ');
+			}
+		}, 1000);
+
+		// Function to check and toggle 'activeFAQ' class
+		function toggleActiveClass() {
+			var items = document.querySelectorAll('#esignatureFAQ .elementor-accordion-item');
+			items.forEach(function (item) {
+				var tabTitle = item.querySelector('.elementor-tab-title');
+				if (tabTitle && tabTitle.classList.contains('elementor-active')) {
+					item.classList.add('activeFAQ');
+				} else {
+					item.classList.remove('activeFAQ');
+				}
+			});
+		}
+
+		// Check on page load
+		toggleActiveClass();
+
+		// Check on click
+		var accordionItems = document.querySelectorAll('#esignatureFAQ .elementor-accordion-item');
+		accordionItems.forEach(function (item) {
+			item.addEventListener('click', toggleActiveClass);
+		});
+
+		
+  // Get all elements that have the 'elementor-accordion-icon' class
+    var accordionIcons = document.querySelectorAll('.elementor-accordion-icon');
+ 
+    // Loop through each accordion icon
+    accordionIcons.forEach(function(icon) {
+        // Find the closed and opened icon spans
+        var closedIcon = icon.querySelector('.elementor-accordion-icon-closed');
+        var openedIcon = icon.querySelector('.elementor-accordion-icon-opened');
+ 
+        // Replace the SVG in the 'closed' span with <i class="fas fa-plus"></i>
+        closedIcon.innerHTML = '<i class="fas fa-plus"></i>';
+ 
+        // Replace the SVG in the 'opened' span with <i class="fas fa-minus"></i>
+        openedIcon.innerHTML = '<i class="fas fa-minus"></i>';
+    });
+	});
+</script>

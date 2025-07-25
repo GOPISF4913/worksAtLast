@@ -1,0 +1,144 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+
+.header{
+    display: flex;
+    gap: 50px;
+    border: 5px solid black ;
+    align-items: center;
+    width: 80%;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.header img{
+ width: 40px;
+}
+
+.header h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+
+}
+
+.books-header{
+    color: blue;
+}
+
+.form-wrapper{
+ 
+    display: flex;
+    gap: 50px;
+    border: 5px solid black;
+    width: 80%;
+    height: 85%;
+    padding: 10px;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    padding: 30px;
+}
+
+.footer{
+    gap: 50px;
+    border: 5px solid black;
+    width: 80%;
+    padding: 20px;
+    font-size: 0.6rem;
+}
+
+.element-wrapper{
+    display: flex;
+    margin-left: 20px;
+    gap: 2rem;
+    margin-bottom: 10px;
+}
+
+.element-wrapper .element-name{
+    font-weight: 750;
+    font-size: 1.3rem;
+    
+}
+
+.error-message{
+    color: red;
+}
+
+
+select,input{
+    width: 200px;
+    height: 30px;
+    font-weight: 700;
+    padding: 5px;
+}
+
+button{
+    background-color: white;
+    padding:  4px 40px 3px 8px ;
+    border: 2px solid gray;
+    color: gray ;
+    font-weight: 600;
+    margin-right: 50px;
+    margin-left: 20px;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+}
+
+
+#category-wrapper{
+    margin-left: 40px;
+}
+#category-wrapper+ .message{
+    margin-left: 40px;
+}
+#book-wrapper{
+    margin-left: 77px;
+}
+#book-wrapper + .message{
+    margin-left: 77px;
+}
+
+#published-wrapper{
+    margin-left: 30px;
+}
+#published-wrapper+ .message{
+    margin-left: 30px;
+}
+
+#price-wrapper{
+    margin-left: 78px;
+}
+#price-wrapper + .message{
+    margin-left: 78px;
+}
+
+.error-validator{
+    display: flex;
+    flex-direction: column;
+}
+
+.error{
+    border: 2px solid red;
+}
+.success{
+    border: 2px solid rgb(95, 251, 157);
+}
+.message{
+    font-weight: 750;
+    font-size: 1.3rem;
+    display: none;
+}
+

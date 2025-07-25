@@ -1,0 +1,33 @@
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    width:20%;
+    gap:10px
+}
+.messages{
+    display: flex;
+    justify-content: space-between;
+}
+#error-name{
+    margin:0
+}
+
+input{
+    outline: none;
+}
+
+
+.success {
+
+    border : 10px solid green;
+}
+.error {
+    background-color: red;
+    border : 10px solid rgb(190, 23, 62);
+    color: yellow;
+}
+p{
+    margin: 0;
+    color: red;
+}
